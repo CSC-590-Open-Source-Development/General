@@ -24,6 +24,7 @@ When referencing an issue or pull request, please include a link for easy access
 | Date       | Contributor | Task / Feature / Bug Fix | Description                                           | Reference (Issue/PR)            |
 |------------|-------------|--------------------------|-------------------------------------------------------|---------------------------------|
 | 2025-02-10 | whogenkamp3 | Set up git organization  | Set up a working repo and org for open  source project|                                 |
+| 2025-02-11 | ccannon062  | Set up code of conduct   | Set up a condtibution file for open source project    |                                 |
 
 
 
