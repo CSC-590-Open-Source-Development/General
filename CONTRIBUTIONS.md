@@ -1,6 +1,7 @@
 # 📜 Project Contributions Log  
 
 This document records the work done on this project and lists the contributors responsible for each task, feature, bug fix, or improvement.  
+This document is automatically updated based on commit history!!
 
 ## 📌 Contributions Log  
 
