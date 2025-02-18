@@ -1,0 +1,40 @@
+name: "Update Contributions Log"
+
+on:
+  push:
+    branches:
+      - main  # Runs only when commits are pushed to the main branch
+
+jobs:
+  update-log:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch full history to get commit details
+
+      - name: Get Latest Commit Info
+        id: commit_info
+        run: |
+          echo "COMMIT_DATE=$(date -u +'%Y-%m-%d')" >> $GITHUB_ENV
+          echo "CONTRIBUTOR=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
+          echo "TASK=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
+          echo "REFERENCE=$(git log -1 --pretty=format:'%H')" >> $GITHUB_ENV
+
+      - name: Update Contributions Log
+        run: |
+          LOG_ENTRY="| $COMMIT_DATE | $CONTRIBUTOR | $TASK | $REFERENCE |"
+          
+          if ! grep -q "$REFERENCE" CONTRIBUTIONS.md; then
+            echo "$LOG_ENTRY" >> CONTRIBUTIONS.md
+          fi
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions@github.com"
+          git add CONTRIBUTIONS.md
+          git commit -m "Updated Contributions Log"
+          git push
