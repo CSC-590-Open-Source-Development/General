@@ -29,7 +29,10 @@ When referencing an issue or pull request, please include a link for easy access
 | 2025-02-18 | santiagoL1  | Discussions              | Created a discussion board for open src project       |                                 |
 | 2025-02-18 | patriciale8 | Another Feature          | Created Issue Template                                |                                 |
 
+## 📌 Contributions Log  
 
+| Date       | Contributor | Task / Feature / Bug Fix | Reference (Commit Hash) |
+|------------|------------|-------------------------|-------------------------|
 
 
 
