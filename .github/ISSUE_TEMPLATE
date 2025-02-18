@@ -1,0 +1,71 @@
+---
+name: Bug Report / Feature Request
+about: Use this template to report a bug or request a new feature
+title: "[BUG/FEATURE]"
+labels: ''
+assignees: ''
+---
+
+## Issue Type
+
+<!-- Please check one of the options below by replacing [ ] with [x] -->
+- [ ] Bug Report
+- [ ] Feature Request
+
+---
+
+## General Information
+
+**Summary:**  
+A brief summary of the issue.
+
+**Additional Context:**  
+Any other information, logs, or screenshots that might help us understand the issue.
+
+---
+
+## For Bug Reports
+
+*(Fill out this section if you're reporting a bug)*
+
+### Description
+A clear and concise description of the bug.
+
+### Steps To Reproduce
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '...'
+3. Scroll down to '...'
+4. See error
+
+### Expected Behavior
+Describe what you expected to happen.
+
+### Actual Behavior
+Describe what actually happened.
+
+### Environment
+- **OS:** [e.g. Windows, macOS, Linux]
+- **Browser:** [e.g. Chrome, Firefox, Safari]
+- **Version:** [e.g. 1.0.0]
+
+---
+
+## For Feature Requests
+
+*(Fill out this section if you're suggesting a feature)*
+
+### Description
+A clear and concise description of the feature or enhancement.
+
+### Motivation
+Explain why this feature is important. What problem does it solve? What benefit will it provide?
+
+### Proposed Solution
+Describe your idea in detail. Include any design or implementation suggestions if applicable.
+
+### Alternatives Considered
+Describe any alternative solutions or features you've considered.
+
+### Additional Context
+Any additional context, screenshots, or examples to help illustrate your request.
