@@ -3,7 +3,10 @@ name: "Update Contributions Log"
 on:
   push:
     branches:
-      - main  # Runs only when commits are pushed to the main branch
+      - main  # Runs only when commits are pushed to main
+
+permissions:  
+  contents: write  # 🚀 Grants write access to push changes
 
 jobs:
   update-log:
@@ -38,3 +41,6 @@ jobs:
           git add CONTRIBUTIONS.md
           git commit -m "Updated Contributions Log"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 🚀 Uses GitHub's built-in token for authentication
+
