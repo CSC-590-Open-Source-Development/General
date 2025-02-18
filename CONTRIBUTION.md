@@ -27,6 +27,8 @@ When referencing an issue or pull request, please include a link for easy access
 | 2025-02-11 | ccannon062  | Set up code of conduct   | Set up a code of conduct file for open source project |                                 |
 | 2025-02-18 | whogenkamp3 | Finished up README.md    | Finished setting up README.md file                    |                                 |
 | 2025-02-18 | santiagoL1  | Discussions              | Created a discussion board for open src project       |                                 |
+| 2025-02-18 | patriciale8 | Another Feature          | Created Issue Template                                |                                 |
+
 
 
 
