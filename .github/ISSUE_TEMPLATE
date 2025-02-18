@@ -1,71 +1,67 @@
----
-name: Bug Report / Feature Request
-about: Use this template to report a bug or request a new feature
-title: "[BUG/FEATURE]"
-labels: ''
-assignees: ''
----
+<!--
+Thank you for taking the time to report an issue or suggest an enhancement! 
+Please complete the relevant sections below to help us address your request efficiently.
+-->
 
-## Issue Type
-
-<!-- Please check one of the options below by replacing [ ] with [x] -->
-- [ ] Bug Report
-- [ ] Feature Request
+### Issue Type
+<!-- Please check the relevant box with an 'x' -->
+- [ ] 🐛 Bug Report
+- [ ] 🚀 Feature Request
+- [ ] ❓ General Question
 
 ---
 
-## General Information
-
-**Summary:**  
-A brief summary of the issue.
-
-**Additional Context:**  
-Any other information, logs, or screenshots that might help us understand the issue.
-
----
-
-## For Bug Reports
-
-*(Fill out this section if you're reporting a bug)*
+## 🐛 Bug Report
 
 ### Description
-A clear and concise description of the bug.
+<!-- A clear and concise description of the problem. -->
 
-### Steps To Reproduce
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '...'
-3. Scroll down to '...'
-4. See error
+### Steps to Reproduce
+1. 
+2. 
+3. 
 
 ### Expected Behavior
-Describe what you expected to happen.
+<!-- What you expected to happen. -->
 
 ### Actual Behavior
-Describe what actually happened.
+<!-- What actually happened. -->
+
+### Screenshots or Logs (if applicable)
+<!-- Attach screenshots or logs to better illustrate the issue. -->
 
 ### Environment
-- **OS:** [e.g. Windows, macOS, Linux]
-- **Browser:** [e.g. Chrome, Firefox, Safari]
-- **Version:** [e.g. 1.0.0]
+- OS: [e.g., Windows 10, macOS Monterey]
+- Node.js version: [e.g., 16.x]
+- Other relevant details:
 
 ---
 
-## For Feature Requests
+## 🚀 Feature Request
 
-*(Fill out this section if you're suggesting a feature)*
-
-### Description
-A clear and concise description of the feature or enhancement.
-
-### Motivation
-Explain why this feature is important. What problem does it solve? What benefit will it provide?
+### Problem Statement
+<!-- A clear and concise description of the problem this feature aims to solve. -->
 
 ### Proposed Solution
-Describe your idea in detail. Include any design or implementation suggestions if applicable.
+<!-- Describe the solution you'd like to see. -->
 
 ### Alternatives Considered
-Describe any alternative solutions or features you've considered.
+<!-- Any alternative solutions or features you’ve considered. -->
 
 ### Additional Context
-Any additional context, screenshots, or examples to help illustrate your request.
+<!-- Add any other relevant information, mockups, or screenshots. -->
+
+---
+
+## ❓ General Question
+
+### Question
+<!-- Clearly describe your question or topic of discussion. -->
+
+---
+
+### ✅ Checklist
+- [ ] I have searched the existing issues to ensure this is not a duplicate.
+- [ ] I have provided all the necessary information to help with resolving this issue.
+
+Thank you for your contribution! 🚀
