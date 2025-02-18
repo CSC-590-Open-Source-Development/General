@@ -21,3 +21,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-18 | whogenkamp3 | Delete ISSUE_TEMPLATE | 28c9c5e0f6483da383edc4f75b91d66b61bd6aad |
 | 2025-02-18 | domag13 | Create general_issue.md | d40171e8fd44c4349ab63804e39181ffaac656b1 |
 | 2025-02-18 | Santiago Lizarraga | Create PULL_REQUEST_TEMPLATE.md | 934a75e5a7d3d5e8f654aaa03a2a86650b1f9b78 |
+| 2025-02-18 | domag13 | Update ISSUE_TEMPLATE | 4ccf9ed108213e4e563351f3acb620f497433e23 |
