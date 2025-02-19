@@ -1,0 +1,8 @@
+blank_issues_enabled: false  # Prevents users from opening blank issues
+contact_links:
+  - name: 💬 Community Discussion
+    url: https://github.com/CSC-590-Open-Source-Development/General/discussions
+    about: Please ask general questions or discuss ideas in the community forum.
+  - name: 📄 Documentation
+    url: https://yourprojectdocs.com
+    about: Check the documentation before opening an issue.
