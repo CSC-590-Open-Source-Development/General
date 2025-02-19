@@ -30,3 +30,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-19 | domag13 | Update auto-issue-template.yaml | e208e8ca7c4cd08c58e9fe9587dc7f8fdf1d453a |
 | 2025-02-19 | domag13 | Update and rename auto-issue-template.yaml to auto-issue-template.yml | c4093b811831c3117186be33eb260b1ab6351efd |
 | 2025-02-19 | domag13 | Update auto-issue-template.yml | 3a76f31cd034eece8016d461559d324aaf6de566 |
+| 2025-02-19 | domag13 | Update auto-issue-template.yml | 27c3ff50f29ab2f5a4f8cb61a3c6ac6269c9293c |
