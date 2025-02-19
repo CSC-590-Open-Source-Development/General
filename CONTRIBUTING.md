@@ -38,3 +38,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-19 | domag13 | Create BUG_ISSUE.yml | 8d80a043231aa4639ca53bf44a2cf51ed74498a7 |
 | 2025-02-19 | whogenkamp3 | Update update_contributions.yml | 81ac8994f20f671de4e5535aa3bdbbf90cbce1eb |
 | 2025-02-19 | whogenkamp3 | Delete CONTRIBUTIONS.md | 932406eb27e7343f1bc4c0f0057ebcf61128af63 |
+| 2025-02-19 | domag13 | Delete .github/ISSUE_TEMPLATE/bug_template.md | 1db3e9ecb98e8858550450ccdebcc547a46fb70e |
