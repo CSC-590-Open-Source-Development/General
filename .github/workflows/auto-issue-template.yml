@@ -9,7 +9,7 @@ on:
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
-  contents: write  # <-- Grants write access to push changes
+  contents: write  # Grants write access to push changes
 
 jobs:
   check-and-create-template:
@@ -19,7 +19,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # <-- Uses built-in GitHub token
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0  # Ensure full history for rebase
 
       - name: Check if ISSUE_TEMPLATE Exists
         id: check_file
@@ -62,11 +63,20 @@ jobs:
           (Screenshots, logs, or additional details)
           EOF
 
-      - name: Commit and Push Changes
+      - name: Configure Git
         if: env.missing == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull Latest Changes (Avoid Conflicts)
+        if: env.missing == 'true'
+        run: |
+          git pull --rebase origin main || echo "No remote changes to rebase."
+
+      - name: Commit and Push Changes
+        if: env.missing == 'true'
+        run: |
           git add .github/ISSUE_TEMPLATE/bug_issue.md
           git commit -m "Auto-create bug_issue.md"
           git push origin main
