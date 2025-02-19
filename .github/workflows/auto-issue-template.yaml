@@ -1,0 +1,85 @@
+name: Ensure ISSUE_TEMPLATE Exists
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  check-and-create-template:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check if ISSUE_TEMPLATE Exists
+        id: check_file
+        run: |
+          if [ ! -f ".github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md" ]; then
+            echo "Template not found. Creating it now."
+            echo "missing=true" >> $GITHUB_ENV
+          else
+            echo "ISSUE_TEMPLATE.md already exists."
+            echo "missing=false" >> $GITHUB_ENV
+          fi
+
+      - name: Create ISSUE_TEMPLATE.md if Missing
+        if: env.missing == 'true'
+        run: |
+          mkdir -p .github/ISSUE_TEMPLATE
+          cat <<EOF > .github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md
+          <!--
+          Thank you for taking the time to report an issue or suggest an enhancement! 
+          Please complete the relevant sections below to help us address your request efficiently.
+          -->
+
+          ### Issue Type
+          - [ ] 🐛 Bug Report
+          - [ ] 🚀 Feature Request
+          - [ ] ❓ General Question
+
+          ## 🐛 Bug Report
+          **Description:**  
+          <!-- A clear and concise description of the problem. -->
+
+          **Steps to Reproduce:**
+          1. 
+          2. 
+          3. 
+
+          **Expected Behavior:**  
+          <!-- What you expected to happen. -->
+
+          **Actual Behavior:**  
+          <!-- What actually happened. -->
+
+          ## 🚀 Feature Request
+          **Problem Statement:**  
+          <!-- A clear and concise description of the problem this feature aims to solve. -->
+
+          **Proposed Solution:**  
+          <!-- Describe the solution you'd like to see. -->
+
+          **Alternatives Considered:**  
+          <!-- Any alternative solutions or features you’ve considered. -->
+
+          **Additional Context:**  
+          <!-- Add any other relevant information, mockups, or screenshots. -->
+
+          ## ✅ Checklist
+          - [ ] I have searched the existing issues to ensure this is not a duplicate.
+          - [ ] I have provided all the necessary information to help with resolving this issue.
+          EOF
+
+      - name: Commit and Push Changes
+        if: env.missing == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md
+          git commit -m "Auto-create ISSUE_TEMPLATE.md"
+          git push
