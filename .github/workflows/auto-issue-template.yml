@@ -25,7 +25,7 @@ jobs:
       - name: Check if ISSUE_TEMPLATE Exists
         id: check_file
         run: |
-          if [ ! -f ".github/ISSUE_TEMPLATE/bug_template.md" ]; then
+          if [ ! -f ".github/ISSUE_TEMPLATE/bug_issue.md" ]; then
             echo "Template not found. Creating it now."
             echo "missing=true" >> $GITHUB_ENV
           else
@@ -37,7 +37,7 @@ jobs:
         if: env.missing == 'true'
         run: |
           mkdir -p .github/ISSUE_TEMPLATE
-          cat <<EOF > .github/ISSUE_TEMPLATE/bug_template.md
+          cat <<EOF > .github/ISSUE_TEMPLATE/bug_issue.md
           ---
           name: 🐛 Bug Report
           about: Report a bug in the project
@@ -77,6 +77,6 @@ jobs:
       - name: Commit and Push Changes
         if: env.missing == 'true'
         run: |
-          git add .github/ISSUE_TEMPLATE/bug_template.md
-          git commit -m "Auto-create bug_template.md"
+          git add .github/ISSUE_TEMPLATE/bug_issue.md
+          git commit -m "Auto-create bug_issue.md"
           git push origin main
