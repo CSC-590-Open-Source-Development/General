@@ -47,3 +47,24 @@ When we receive a security report, we will:
 ## Recognition
 
 We believe in acknowledging security researchers who help improve our security. With your permission, we will add your name to our security acknowledgments page.
+
+## Past Security Advisories
+
+A list of past security advisories and their resolutions can be found in our [Security Advisories](link-to-advisories) page.
+
+## Security Best Practices
+
+For users of this project, we recommend:
+
+- Always use the latest supported version
+- Enable all security features
+- Regularly check for and apply updates
+- Follow our security hardening guidelines [link]
+
+## Contact
+
+For additional security-related questions or concerns, please contact:
+[appropriate-contact-method]
+
+---
+Last updated: February 2025
