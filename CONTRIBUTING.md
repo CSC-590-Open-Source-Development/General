@@ -22,6 +22,7 @@ This document is automatically updated based on commit history!!
 | 2025-02-18 | domag13 | Create general_issue.md | d40171e8fd44c4349ab63804e39181ffaac656b1 |
 | 2025-02-18 | Santiago Lizarraga | Create PULL_REQUEST_TEMPLATE.md | 934a75e5a7d3d5e8f654aaa03a2a86650b1f9b78 |
 | 2025-02-18 | domag13 | Update ISSUE_TEMPLATE | 4ccf9ed108213e4e563351f3acb620f497433e23 |
+| 2025-02-18 | EnzoKlemm | Create SECURITY.md | 8d50667c0b449555f57255d67b0392d80b8c30ed |
 | 2025-02-19 | domag13 | Update and rename ISSUE_TEMPLATE to ISSUE_TEMPLATE.md | 761fb6d45ea5f7550c955fb0e0b95cd28943c5ff |
 | 2025-02-19 | domag13 | Rename .github/ISSUE_TEMPLATE.md to .github/ISSUE_TEMPLATE/bug_template.md | 2c42b6a7a9810c994161cabe387f94323c2d49a6 |
 | 2025-02-19 | domag13 | Delete ISSUES_TEMPLATE directory | d9ba6f2ed3a1d1cc6be0dcd23f35bd6a5cd2c4c7 |
