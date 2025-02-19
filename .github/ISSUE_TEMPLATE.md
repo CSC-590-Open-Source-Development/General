@@ -3,7 +3,7 @@ Thank you for taking the time to report an issue or suggest an enhancement!
 Please complete the relevant sections below to help us address your request efficiently.
 -->
 
-### Issue Type
+Issue Type
 <!-- Please check the relevant box with an 'x' -->
 - [ ] 🐛 Bug Report
 - [ ] 🚀 Feature Request
@@ -12,8 +12,7 @@ Please complete the relevant sections below to help us address your request effi
 ---
 
 ## 🐛 Bug Report
-
-### Description
+Description
 <!-- A clear and concise description of the problem. -->
 
 ### Steps to Reproduce
