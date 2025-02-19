@@ -24,3 +24,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-18 | domag13 | Update ISSUE_TEMPLATE | 4ccf9ed108213e4e563351f3acb620f497433e23 |
 | 2025-02-19 | domag13 | Update and rename ISSUE_TEMPLATE to ISSUE_TEMPLATE.md | 761fb6d45ea5f7550c955fb0e0b95cd28943c5ff |
 | 2025-02-19 | domag13 | Rename .github/ISSUE_TEMPLATE.md to .github/ISSUE_TEMPLATE/bug_template.md | 2c42b6a7a9810c994161cabe387f94323c2d49a6 |
+| 2025-02-19 | domag13 | Delete ISSUES_TEMPLATE directory | d9ba6f2ed3a1d1cc6be0dcd23f35bd6a5cd2c4c7 |
