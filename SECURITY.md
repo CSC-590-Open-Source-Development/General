@@ -20,8 +20,7 @@ We appreciate your efforts in improving the security of our project. If you disc
 
 2. Submit your findings through one of these channels:
    - Open a confidential issue in our repository
-   - Email our security team at [security@example.com]
-   - [Optional] Use our bug bounty program at [link]
+   - Email our security team at security@example.com
 
 3. Include in your report:
    - A brief description of the vulnerability
@@ -48,10 +47,6 @@ When we receive a security report, we will:
 
 We believe in acknowledging security researchers who help improve our security. With your permission, we will add your name to our security acknowledgments page.
 
-## Past Security Advisories
-
-A list of past security advisories and their resolutions can be found in our [Security Advisories](link-to-advisories) page.
-
 ## Security Best Practices
 
 For users of this project, we recommend:
@@ -59,12 +54,10 @@ For users of this project, we recommend:
 - Always use the latest supported version
 - Enable all security features
 - Regularly check for and apply updates
-- Follow our security hardening guidelines [link]
 
 ## Contact
 
-For additional security-related questions or concerns, please contact:
-[appropriate-contact-method]
+For additional security-related questions or concerns, please contact: security@example.com
 
 ---
 Last updated: February 2025
