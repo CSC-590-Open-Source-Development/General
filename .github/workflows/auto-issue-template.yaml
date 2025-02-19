@@ -19,11 +19,11 @@ jobs:
       - name: Check if ISSUE_TEMPLATE Exists
         id: check_file
         run: |
-          if [ ! -f ".github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md" ]; then
+          if [ ! -f ".github/ISSUE_TEMPLATE/bug_issue.md" ]; then
             echo "Template not found. Creating it now."
             echo "missing=true" >> $GITHUB_ENV
           else
-            echo "ISSUE_TEMPLATE.md already exists."
+            echo "bug_issue.md already exists."
             echo "missing=false" >> $GITHUB_ENV
           fi
 
@@ -31,7 +31,7 @@ jobs:
         if: env.missing == 'true'
         run: |
           mkdir -p .github/ISSUE_TEMPLATE
-          cat <<EOF > .github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md
+          cat <<EOF > .github/ISSUE_TEMPLATE/bug_issue.md
           <!--
           Thank you for taking the time to report an issue or suggest an enhancement! 
           Please complete the relevant sections below to help us address your request efficiently.
