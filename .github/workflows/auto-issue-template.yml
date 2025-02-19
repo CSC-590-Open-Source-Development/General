@@ -1,0 +1,72 @@
+name: Ensure ISSUE_TEMPLATE Exists
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write  # <-- Grants write access to push changes
+
+jobs:
+  check-and-create-template:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # <-- Uses built-in GitHub token
+
+      - name: Check if ISSUE_TEMPLATE Exists
+        id: check_file
+        run: |
+          if [ ! -f ".github/ISSUE_TEMPLATE/bug_issue.md" ]; then
+            echo "Template not found. Creating it now."
+            echo "missing=true" >> $GITHUB_ENV
+          else
+            echo "bug_issue.md already exists."
+            echo "missing=false" >> $GITHUB_ENV
+          fi
+
+      - name: Create bug_issue.md if Missing
+        if: env.missing == 'true'
+        run: |
+          mkdir -p .github/ISSUE_TEMPLATE
+          cat <<EOF > .github/ISSUE_TEMPLATE/bug_issue.md
+          ---
+          name: 🐛 Bug Report
+          about: Report a bug in the project
+          title: "[Bug]: "
+          labels: bug
+          assignees: ''
+
+          ## Description
+          A clear and concise description of the problem.
+
+          ## Steps to Reproduce
+          1. 
+          2. 
+          3. 
+
+          ## Expected Behavior
+          A clear description of what you expected to happen.
+
+          ## Actual Behavior
+          A clear description of what actually happened.
+
+          ## Additional Context
+          (Screenshots, logs, or additional details)
+          EOF
+
+      - name: Commit and Push Changes
+        if: env.missing == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/ISSUE_TEMPLATE/bug_issue.md
+          git commit -m "Auto-create bug_issue.md"
+          git push origin main
