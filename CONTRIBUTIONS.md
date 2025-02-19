@@ -27,3 +27,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-19 | domag13 | Delete ISSUES_TEMPLATE directory | d9ba6f2ed3a1d1cc6be0dcd23f35bd6a5cd2c4c7 |
 | 2025-02-19 | domag13 | Create auto-issue-template.yaml | 93509de8aa3b93b0897f39fded68c5c541901d04 |
 | 2025-02-19 | domag13 | Update auto-issue-template.yaml | 0829c8452f5ad908185f70ec45b20fc671122520 |
+| 2025-02-19 | domag13 | Update auto-issue-template.yaml | e208e8ca7c4cd08c58e9fe9587dc7f8fdf1d453a |
