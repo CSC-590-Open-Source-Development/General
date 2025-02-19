@@ -43,3 +43,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-19 | EnzoKlemm | Update CONTRIBUTING.md | 683f3a4306f211d5dacb75099d11048dba2e96be |
 | 2025-02-19 | Caleb C | Update SECURITY.md | 8e41541757e5b42e1123f9602c38e60ad3fb0e32 |
 | 2025-02-19 | Caleb C | Update SECURITY.md | aaba45940df7f4c26931a962b72d576398139998 |
+| 2025-02-19 | Caleb C | Update CONTRIBUTING.md | 2c89c1af844ff2feb1bd03417e9312ffe7739309 |
