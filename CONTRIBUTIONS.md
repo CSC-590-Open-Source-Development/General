@@ -32,3 +32,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-19 | domag13 | Update auto-issue-template.yml | 3a76f31cd034eece8016d461559d324aaf6de566 |
 | 2025-02-19 | domag13 | Update auto-issue-template.yml | 27c3ff50f29ab2f5a4f8cb61a3c6ac6269c9293c |
 | 2025-02-19 | domag13 | Create config.yml | 1d4e50fb07f3efe94609b75814bc2acbe7e4eaf8 |
+| 2025-02-19 | domag13 | Update config.yml | 7e38195b8f7ad6b0f14484ffe16a3c17b5c1c9ca |
