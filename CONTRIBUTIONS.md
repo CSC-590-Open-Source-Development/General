@@ -34,3 +34,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-19 | domag13 | Create config.yml | 1d4e50fb07f3efe94609b75814bc2acbe7e4eaf8 |
 | 2025-02-19 | domag13 | Update config.yml | 7e38195b8f7ad6b0f14484ffe16a3c17b5c1c9ca |
 | 2025-02-19 | domag13 | Delete .github/ISSUE_TEMPLATE/bug_issue.md | f1431caaf36bf524b9de438c2623409de9efd6f4 |
+| 2025-02-19 | domag13 | Update auto-issue-template.yml | 6f8d6655ffd94f00d492fefbe0bb7d3e281a4a59 |
