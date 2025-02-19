@@ -1,4 +1,5 @@
-blank_issues_enabled: false  # Prevents users from opening blank issues
+blank_issues_enabled: true  # Allow users to open blank issues if necessary
+
 contact_links:
   - name: 💬 Community Discussion
     url: https://github.com/CSC-590-Open-Source-Development/General/discussions
@@ -6,3 +7,7 @@ contact_links:
   - name: 📄 Documentation
     url: https://yourprojectdocs.com
     about: Check the documentation before opening an issue.
+  - name: ❓ Support
+    url: https://github.com/CSC-590-Open-Source-Development/General/issues
+    about: Need help? Check existing issues or open a new one.
+
