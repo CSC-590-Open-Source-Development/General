@@ -46,3 +46,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-19 | Caleb C | Update CONTRIBUTING.md | 2c89c1af844ff2feb1bd03417e9312ffe7739309 |
 | 2025-02-19 | Caleb C | Update issue templates | 40d7a32f382536b08a19f965e198ea12ef8f6ff1 |
 | 2025-02-19 | Maria Glazman | Update SECURITY.md | 12ecd39a32f339e21ed59b36d924a3ac3756ef76 |
+| 2025-02-20 | Micah | Update README.md | 5796f3ecbd4462a750ccd442b0cdb88da7d9432a |
