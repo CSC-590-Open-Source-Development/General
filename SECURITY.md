@@ -20,7 +20,7 @@ We appreciate your efforts in improving the security of our project. If you disc
 
 2. Submit your findings through one of these channels:
    - Open a confidential issue in our repository
-   - Email our security team at security@example.com
+   - Email our security team at ccc82689@creighton.edu
 
 3. Include in your report:
    - A brief description of the vulnerability
@@ -57,7 +57,7 @@ For users of this project, we recommend:
 
 ## Contact
 
-For additional security-related questions or concerns, please contact: security@example.com
+For additional security-related questions or concerns, please contact: ccc82689@creighton.edu
 
 ---
 Last updated: February 2025
