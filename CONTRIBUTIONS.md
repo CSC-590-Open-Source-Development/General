@@ -1,8 +1,8 @@
-📜 Contribution Guidelines
+# 📜 Contribution Guidelines
 
 Welcome to our open-source project! We appreciate your interest in contributing. This document outlines the guidelines, tools, and workflow used in this project to ensure a smooth and effective collaboration process.
 
-📌 How to Contribute
+## 📌 How to Contribute
 
 We welcome contributions in various forms, including:
 
@@ -32,7 +32,7 @@ Submit a Pull Request (PR) – Open a PR against the main branch and provide a d
 
 Review Process – Your PR will be reviewed by maintainers and may require revisions before merging.
 
-# 📜 Project Contributions Log  
+## 📜 Project Contributions Log  
 
 This document records the work done on this project and lists the contributors responsible for each task, feature, bug fix, or improvement.  
 This document is automatically updated based on commit history!!
