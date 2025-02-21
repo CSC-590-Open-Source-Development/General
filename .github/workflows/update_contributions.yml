@@ -26,7 +26,7 @@ jobs:
           echo "TASK=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
           echo "REFERENCE=$(git log -1 --pretty=format:'%H')" >> $GITHUB_ENV
 
-      - name: Ensure CONTRIBUTIONS.md Exists
+      - name: Ensure ATTRIBUTIONS.md Exists
         run: |
           if [ ! -f CONTRIBUTIONS.md ]; then
             echo "# Contributing to the Project" > CONTRIBUTIONS.md
@@ -37,20 +37,20 @@ jobs:
             echo "|------------|------------|-------------------------|-------------------------|" >> CONTRIBUTING.md
           fi
 
-      - name: Update CONTRIBUTIONS.md
+      - name: Update ATTRIBUTIONS.md
         run: |
           LOG_ENTRY="| $COMMIT_DATE | $CONTRIBUTOR | $TASK | $REFERENCE |"
           
-          if ! grep -q "$REFERENCE" CONTRIBUTIONS.md; then
-            echo "$LOG_ENTRY" >> CONTRIBUTIONS.md
+          if ! grep -q "$REFERENCE" ATTRIBUTIONS.md; then
+            echo "$LOG_ENTRY" >> ATTRIBUTIONS.md
           fi
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions@github.com"
-          git add CONTRIBUTIONS.md
-          git commit -m "Updated CONTRIBUTIONS.md with latest contribution"
+          git add ATTRIBUTIONS.md
+          git commit -m "Updated ATTRIBUTIONS.md with latest contribution"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 🚀 Uses GitHub's built-in token for authentication
