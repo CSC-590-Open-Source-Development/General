@@ -31,7 +31,7 @@ This organization is dedicated to:
 - Follow best practices for code quality and maintainability.  
 
 **🚀 How to Contribute:**  
-1. Check out [Platform Commander Repository]([https://github.com/your-org/platform-commander](https://github.com/CSC-590-Open-Source-Development/Platform-Commander)).  
+1. Check out [Platform Commander Repository](https://github.com/CSC-590-Open-Source-Development/Platform-Commander).  
 2. Read the `CONTRIBUTING.md` and `ISSUE_TEMPLATE/` for guidelines.  
 3. Fork the repository, create a feature branch, and submit a Pull Request (PR).
 4. Any updates should be added to the contributions doc  
