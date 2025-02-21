@@ -54,3 +54,4 @@
 | 2025-02-21 | Micah | Seperated ATTRIBUTIONS.md and CONTRIBUTING.md | b3fb6e959f72bb111db97456a7e7c5d893aa8ed8 |
 | 2025-02-21 | Micah | Update update_contributions.yml | 3a31fe6155ad1ccb591dc6d39fb808faa31b3e28 |
 | 2025-02-21 | Micah | Delete CONTRIBUTIONS.md | 1a096630134a4332f481f3a69b88b646712bf000 |
+| 2025-02-21 | Micah | Update ATTRIBUTIONS.md | 7224d6c36cea86d8345a8d8e12b6f05a5f806745 |
