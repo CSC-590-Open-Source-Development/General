@@ -26,31 +26,31 @@ jobs:
           echo "TASK=$(git log -1 --pretty=format:'%s')" >> $GITHUB_ENV
           echo "REFERENCE=$(git log -1 --pretty=format:'%H')" >> $GITHUB_ENV
 
-      - name: Ensure CONTRIBUTING.md Exists
+      - name: Ensure CONTRIBUTIONS.md Exists
         run: |
-          if [ ! -f CONTRIBUTING.md ]; then
-            echo "# Contributing to the Project" > CONTRIBUTING.md
-            echo "" >> CONTRIBUTING.md
-            echo "This document records contributions made to this project." >> CONTRIBUTING.md
-            echo "" >> CONTRIBUTING.md
+          if [ ! -f CONTRIBUTIONS.md ]; then
+            echo "# Contributing to the Project" > CONTRIBUTIONS.md
+            echo "" >> CONTRIBUTIONS.md
+            echo "This document records contributions made to this project." >> CONTRIBUTIONS.md
+            echo "" >> CONTRIBUTIONS.md
             echo "| Date       | Contributor | Task / Feature / Bug Fix | Reference (Commit Hash) |" >> CONTRIBUTING.md
             echo "|------------|------------|-------------------------|-------------------------|" >> CONTRIBUTING.md
           fi
 
-      - name: Update CONTRIBUTING.md
+      - name: Update CONTRIBUTIONS.md
         run: |
           LOG_ENTRY="| $COMMIT_DATE | $CONTRIBUTOR | $TASK | $REFERENCE |"
           
-          if ! grep -q "$REFERENCE" CONTRIBUTING.md; then
-            echo "$LOG_ENTRY" >> CONTRIBUTING.md
+          if ! grep -q "$REFERENCE" CONTRIBUTIONS.md; then
+            echo "$LOG_ENTRY" >> CONTRIBUTIONS.md
           fi
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions@github.com"
-          git add CONTRIBUTING.md
-          git commit -m "Updated CONTRIBUTING.md with latest contribution"
+          git add CONTRIBUTIONS.md
+          git commit -m "Updated CONTRIBUTIONS.md with latest contribution"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 🚀 Uses GitHub's built-in token for authentication
