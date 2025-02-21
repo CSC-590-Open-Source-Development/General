@@ -2,7 +2,7 @@
 
 Welcome to our open-source project! We appreciate your interest in contributing. This document outlines the guidelines, tools, and workflow used in this project to ensure a smooth and effective collaboration process.
 
-## 📌 How to Contribute
+## 🛠️ How to Contribute
 
 We welcome contributions in various forms, including:
 
