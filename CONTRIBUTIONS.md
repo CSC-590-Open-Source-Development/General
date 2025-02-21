@@ -32,7 +32,7 @@ Submit a Pull Request (PR) – Open a PR against the main branch and provide a d
 
 Review Process – Your PR will be reviewed by maintainers and may require revisions before merging.
 
-## 📜 Project Contributions Log  
+# 📜 Project Contributions Log  
 
 This document records the work done on this project and lists the contributors responsible for each task, feature, bug fix, or improvement.  
 This document is automatically updated based on commit history!!
