@@ -90,3 +90,4 @@ This document is automatically updated based on commit history!!
 | 2025-02-21 | Alex Fergestad | Updated CONTRIBUTIONS.md | 0b53f06d939103e0a50ac91769957635303e6480 |
 | 2025-02-21 | Alex Fergestad | Updated CONTRIBUTIONS.md | 2a5ba2c5453eb7d6035acc55a0beed3a247cfe15 |
 | 2025-02-21 | Alex Fergestad | Update CONTRIBUTIONS.md | fdeeff931ed6d0a27552bb47d3ac837990de524e |
+| 2025-02-26 | Santiago Lizarraga | Added main branch protection |  |
